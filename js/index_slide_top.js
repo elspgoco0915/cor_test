@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(){
+
   var setImage = [
       "images/main_backimg1.jpg",
       "images/main_backimg2.jpg",
       "images/main_backimg3.jpg",
       "images/main_backimg4.jpg",
     ];
+
+    // 先に全画像をレンダリングしておく
+    for(var i = 0; i < setImage.length; i++){
+      document.getElementById("index").style.backgroundImage = "url(" + setImage[i] + ")";
+    }
+
     //カウンターの初期値設定
     var counter = 1;
 

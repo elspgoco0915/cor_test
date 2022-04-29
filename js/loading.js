@@ -10,7 +10,7 @@ var images = [
 ];
 for($i = 0; $i < images.length; $i++){
   console.log($i);
-  document.getElementById("index").style.backgroundImage = "url(" + setImage[$i] + ")";
+  document.getElementById("index").style.backgroundImage = "url(" + images[$i] + ")";
 }
 
 window.addEventListener('load', function () {
